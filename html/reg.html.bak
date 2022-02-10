@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:CURSIVE, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: 'uchet.png';
+  padding: 0px;
+  text-align: center;
+  font-size: 0px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 0;
+  background: #dda0dd;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #eebef1;
+  padding: 10px;
+  height: 675px;
+  texst-align: center;
+}
+
+/* Style the footer */
+footer {
+  background-color: #803e75;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+table {
+  width:100%;
+}
+
+th, td {
+  padding: 7px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+<img src="uchet.png" width=1264 height=150>
+</header>
+
+<section>
+  <nav>
+    <ul>
+		<li><a href="reg.html">Регистрация</a></li>
+      <li><a href="tabl.html">Таблица</a></li>
+	  <li><a href="otchet.html">Отчёт</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+  <table>
+  <form>
+
+  <tr>
+  <th>ФИО</th>
+  </tr>
+   <tr>
+  <td><input id="otdel" type="text"></td>
+  </tr>
+  <tr>
+  <th>№телефона</th>
+  </tr>
+  <tr>
+  <td><input id="ob" type="text"></td>
+  </tr>
+  <tr>
+  <th>E-mail</th>
+  </tr>
+  <tr>
+  <td><input id="kol" type="text"></td>
+  </tr>
+ <tr>
+
+ <td><button>Отправить</button>
+ </tr>
+  </form>
+ </table>
+<br>
+
+  </article>
+</section>
+
+<footer>
+  <p>Учет воды - это практика измерения водопотребелния.</p>
+</footer>
+
+</body>
+</html>
